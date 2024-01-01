@@ -1,0 +1,20 @@
+﻿<Window x:Class="_213001_Final.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_213001_Final"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1100">
+    <Grid Background="#FF3CEDC1">
+        <Label Content="ID" HorizontalAlignment="Left" Height="50" Width="60" Margin="92,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.659,0.531" HorizontalContentAlignment="Center" FontSize="28" FontFamily="Sitka Text" FontWeight="Bold"/>
+        <Label Content="NAME" HorizontalAlignment="Left" Height="50" Width="124" Margin="92,214,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="Sitka Text" FontWeight="Bold"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="262,96,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="380" FontSize="48"/>
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="262,215,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="380" FontSize="48"/>
+        <Button Content="INSERT" HorizontalAlignment="Left" Margin="84,418,0,0" VerticalAlignment="Top" FontSize="36" Width="132" Height="61" Click="Button_Click" Background="#FF2FC8C5"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="671,66,94,361" RenderTransformOrigin="0.501,0.715" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" Margin="335,419,0,0" VerticalAlignment="Top" FontSize="36" Height="60" Click="Button_Click_2" Background="#FF2FC8C5"/>
+        <Button Content="DELETE" HorizontalAlignment="Left" Margin="551,419,0,0" VerticalAlignment="Top" FontSize="36" Height="60" Background="#FF2FC8C5" Click="Button_Click_3"/>
+        <Button Content="CLEAR" HorizontalAlignment="Left" Margin="812,421,0,0" VerticalAlignment="Top" FontSize="36" Height="61" Click="Button_Click_1" Background="#FF2FC8C5"/>
+    </Grid>
+</Window>
